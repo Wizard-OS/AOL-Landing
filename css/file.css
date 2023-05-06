@@ -1,0 +1,325 @@
+:root {
+    --color: #545b62;
+    --color2: #080706;
+    --color3: #fad008;
+    --color4: #fff;
+    --color5: #f4f4f4;
+}
+
+
+/*  Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) {
+    /* Section Header */
+    .header-home {
+        min-height: 380px;
+    }
+
+    .header-empresa {
+        min-height: 320px;
+    }
+
+    .header-servicios {
+        min-height: 300px;
+    }
+
+    .header-sectores {
+        min-height: 180px;
+    }
+
+    .header-sat {
+        min-height: 300px;
+    }
+
+    .p-title {
+        padding-left: 3.5rem !important;
+        padding-right: 3.5rem !important;
+    }
+
+    .p-title-empresa {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        margin-top: 3rem !important;
+    }
+
+    /* Section Experience */
+    #reducerImage {
+        width: 50% !important;
+    }
+
+    /* Section Maintenance */
+    .logo-maintenance {
+        width: 15% !important;
+    }
+
+    #motorSketch {
+        margin-top: -9.8rem;
+    }
+
+    #logoPower {
+        width: 40%;
+    }
+
+    /* Section News */
+    /* Section Contact*/
+    /* Section Footer */
+    #logoPowerFooter {
+        width: 40% !important;
+    }
+
+    /* Section SAT */
+    #logoPowertransmission {
+        width: 40% !important;
+    }
+
+    #logoPowerFooterSat {
+        width: 40% !important;
+    }
+}
+
+/*  Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    h3 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    h4 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    h5 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h6 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    /* Section Header */
+    .p-title {
+        padding-left: 7rem !important;
+        padding-right: 7rem !important;
+    }
+
+    .p-title-empresa {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+
+    .header-empresa {
+        min-height: 560px !important;
+    }
+
+    .header-industria {
+        min-height: 450px;
+    }
+
+    .header-servicios {
+        min-height: 520px;
+    }
+    .header-sectores {
+        min-height: 300px;
+    }
+
+    .header-sat {
+        min-height: 380px;
+    }
+
+    /* Section Maintenance */
+    #logoPower {
+        width: 100% !important;
+    }
+
+    .p-divider {
+        margin-left: 10rem !important;
+        margin-right: 10rem !important;
+    }
+
+    .m-divider {
+        margin-top: 2rem !important;
+    }
+
+    /* Section Experience */
+    #motorSketch {
+        margin-top: -13.3rem;
+    }
+
+    /* Section Industria */
+    .px-md-6 {
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+    }
+
+    /* Section Footer */
+    #logoPowerFooter {
+        width: 100% !important;
+    }
+
+    /* Section SAT */
+    #logoPowertransmission {
+        width: 30% !important;
+    }
+
+    #logoPowerFooterSat {
+        width: 35% !important;
+    }
+}
+
+/*  Large devices (desktops, 992px and up)  */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 72px;
+        line-height: 80px;
+    }
+
+    h2 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h4 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h5 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    h6 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* Section Header */
+    .p-title {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+
+    .p-title-empresa {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .header-empresa {
+        min-height: 450px !important;
+    }
+
+    .header-industria {
+        min-height: 420px;
+    }
+
+    .header-sat {
+        min-height: 420px;
+    }
+
+    .logo-header {
+        height: 80px;
+    }
+
+    .ms-lg-6 {
+        margin-left: 6rem !important;
+    }
+
+    /* Section Experience */
+    .pb-15 {
+        padding-bottom: 15rem;
+    }
+
+    /* Section Maintenance */
+    #reducerImage {
+        width: 100% !important;
+    }
+
+    #motorSketch {
+        margin-top: -17.9rem;
+    }
+
+    /* Section Industria */
+    .px-lg-8 {
+        padding-right: 8rem !important;
+        padding-left: 8rem !important;
+    }
+
+    /* Section Services   */
+    #image-main-service {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+
+    /* Section SAT   */
+    .px-lg-6 {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .fs-lg-40 {
+        font-size: 40px !important;
+        line-height: 44px !important;
+    }
+
+    #logoPowerFooterSat {
+        width: 25% !important;
+    }
+
+}
+
+/*  X-Large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+    .p-title {
+        padding-left: 10rem !important;
+        padding-right: 10rem !important;
+    }
+
+    /* Section Maintenance */
+    #reducerImage {
+        width: 100% !important;
+    }
+
+    #motorSketch {
+        margin-top: -21.3rem;
+    }
+
+    /* Section Industria */
+    .px-xl-14 {
+        padding-right: 14rem !important;
+        padding-left: 14rem !important;
+    }
+
+    /* Section Services   */
+    #image-main-service {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+
+    /* Section SAT   */
+    #logoPowertransmission {
+        width: 25% !important;
+    }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up)  */
+@media (min-width: 1400px) {
+
+}
