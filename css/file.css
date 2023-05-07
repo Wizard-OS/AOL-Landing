@@ -1,10 +1,238 @@
 :root {
     --color: #545b62;
-    --color2: #080706;
+    --text: #24292F;
     --color3: #fad008;
     --color4: #fff;
     --color5: #f4f4f4;
 }
+
+/* Navbar fixes */
+.navbar {
+    background-color: #24292F;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* End Navbar fixes */
+
+/* Buttons fixes */
+
+
+.btn {
+    border-radius: 2rem !important;
+}
+
+.btn-link {
+    color: white !important;
+    text-decoration: none;
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--text);
+}
+
+.btn-white:hover {
+    background-color: white;
+    color: var(--text);
+}
+
+/* End Buttons fixes */
+
+
+/* Text Styles */
+.subtitle {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: "Roboto Light" !important;
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.main-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--text);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.main-title-left {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.main-title-left::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--text);
+    margin-top: 30px;
+}
+
+/* End Text Styles */
+
+/* Header Section */
+header {
+    margin-top: 3rem;
+    /*max-height: 75vh;*/
+
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30px !important;
+    height: 8px;
+    background-clip: unset !important;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 10px;
+}
+
+/* End Header Section */
+
+
+/* Abitab Familia Section */
+#abitab-familia-section {
+    margin: 100px 0;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none !important;
+}
+
+.card-link {
+    font-size: 20px;
+    font-family: "Roboto Medium" !important;
+    color: var(--text);
+}
+
+.card-link:hover {
+    color: white;
+}
+
+.card {
+    width: 33% !important;
+    border: none !important;
+}
+
+.card:hover {
+    background-color: var(--text);
+    color: white !important;
+    cursor: pointer;
+}
+
+.icon-card {
+    z-index: 0;
+    margin-top: 3rem !important;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-card:hover {
+    filter: invert(93%) sepia(0%) saturate(7483%) hue-rotate(71deg) brightness(116%) contrast(101%);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+
+.dark-card-bg {
+    background-color: var(--text);
+}
+
+/* End Abitab Familia Section */
+
+
+/* Offers Section */
+#offers-section {
+    margin: 100px 0;
+}
+
+/* End Offers Section */
+
+
+/* TuCaja Section */
+#tucaja-section {
+    margin: 100px 0;
+}
+
+/* End TuCaja Section */
+
+
+/* Phone Section */
+#phone-section {
+    margin: 100px 0;
+}
+
+/* End Phone Section */
+
+
+/* Abitab Collectivos Section */
+#abitab-colectivos-section {
+    margin: 100px 0;
+}
+
+/* End Abitab Collectivos Section */
+
+
+/* History Section */
+#history-section {
+    margin: 100px 0;
+}
+
+/* End History Section */
+
+
+/* Giro Transfer Section */
+#giro-transfer-section {
+    margin: 100px 0;
+}
+
+/* End Giro Transfer Section */
+
+
+/* Parking Section */
+#parking-section {
+    margin: 100px 0;
+}
+
+/* End Parking Section */
+
+
+/* Newsletters Section */
+#newsletters-section {
+    margin: 100px 0;
+}
+
+/* End Newsletters Section */
+
+
+/* Footer Section */
+
+/* End Footer Section */
 
 
 /*  Small devices (landscape phones, 576px and up)  */
@@ -131,6 +359,7 @@
     .header-servicios {
         min-height: 520px;
     }
+
     .header-sectores {
         min-height: 300px;
     }
