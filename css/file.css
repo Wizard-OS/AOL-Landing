@@ -1,9 +1,27 @@
 :root {
     --color: #545b62;
-    --text: #24292F;
-    --color3: #fad008;
-    --color4: #fff;
+    --text: #24292f;
+    --card-title-color: #3c3c3c;
+    --text-light-70: rgba(255, 255, 255, 0.7) !important;
+    --text-light: rgba(255, 255, 255, 1) !important;
+
     --color5: #f4f4f4;
+    --background-sections: #eef3ff;
+}
+
+p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-light-70 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+.text-light {
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 /* Navbar fixes */
@@ -20,12 +38,29 @@
     text-decoration: underline;
 }
 
-/* End Navbar fixes */
+.navbar-toggler {
+    padding: 0;
+    color: transparent;
+    border: none;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    border-color: transparent;
+}
 
+/* End Navbar fixes */
 
 /* Buttons fixes */
 .btn {
     border-radius: 2rem !important;
+}
+
+.btn-blue {
+    background-color: #004379;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #00226d;
+    color: white;
 }
 
 .btn-link {
@@ -45,19 +80,21 @@
 
 /* End Buttons fixes */
 
-
 /* Text Styles */
 .subtitle {
     text-transform: uppercase;
+    font-family: "Roboto" !important;
+    font-style: normal;
     font-size: 28px;
-    font-family: "Roboto Light" !important;
-    margin: 0;
-    padding: 0;
+    font-weight: 300;
+    line-height: 34px;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .main-title {
     font-size: 48px;
-    font-family: "Roboto Medium" !important;
+    font-family: "Roboto" !important;
 }
 
 .main-title::after {
@@ -73,7 +110,7 @@
 
 .main-title-light {
     font-size: 48px;
-    font-family: "Roboto Medium" !important;
+    font-family: "Roboto" !important;
 }
 
 .main-title-light::after {
@@ -89,7 +126,7 @@
 
 .main-title-left {
     font-size: 48px;
-    font-family: "Roboto Medium" !important;
+    font-family: "Roboto" !important;
 }
 
 .main-title-left::after {
@@ -101,8 +138,13 @@
     margin-top: 30px;
 }
 
-.text-light {
-    color: white !important;
+.card-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--card-title-color);
 }
 
 /* End Text Styles */
@@ -111,8 +153,6 @@
 header {
     margin-top: 3rem;
     /*max-height: 75vh;*/
-
-
 }
 
 .carousel-indicators [data-bs-target] {
@@ -126,11 +166,10 @@ header {
 
 /* End Header Section */
 
-
 /* Abitab Familia Section */
 #abitab-familia-section {
     padding: 100px 0;
-    background-color: rgba(162,231,255,.3);
+    background-color: var(--background-sections);
 }
 
 a {
@@ -138,26 +177,17 @@ a {
     text-decoration: none !important;
 }
 
-.card-link {
-    font-size: 20px;
-    font-family: "Roboto Medium" !important;
-    color: var(--text);
-}
-
-.card-link:hover {
-    color: white;
-}
-
 .card {
-    width: 33% !important;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     border: none !important;
 }
 
-.card:hover {
-    background-color: var(--text);
-    color: white !important;
-    cursor: pointer;
-}
+/* .card:hover,
+h5:hover {
+  background-color: var(--text);
+  color: white !important;
+  cursor: pointer;
+} */
 
 .icon-card {
     z-index: 0;
@@ -168,16 +198,9 @@ a {
     margin-right: auto;
 }
 
-.icon-card:hover {
-    filter: invert(93%) sepia(0%) saturate(7483%) hue-rotate(71deg) brightness(116%) contrast(101%);
+.card-abis {
+    height: 245px;
 }
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
 
 .dark-card-bg {
     background-color: var(--text);
@@ -185,96 +208,159 @@ a {
 
 /* End Abitab Familia Section */
 
-
 /* Offers Section */
 #offers-section {
     padding: 100px 0;
-    background-color: var(--text);
 }
 
 /* End Offers Section */
 
-
 /* TuCaja Section */
 #tucaja-section {
     padding: 100px 0;
-    background-color: rgba(162,231,255,.3);
+    background-color: var(--background-sections);
+}
 
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--card-title-color);
+}
+
+.list-group-item::before {
+    content: "";
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--card-title-color);
+    margin-right: 8px;
 }
 
 /* End TuCaja Section */
-
 
 /* Phone Section */
 #phone-section {
     padding: 100px 0;
 }
 
-.icon-phone-base{
+.icon-phone-container {
     width: 165px;
     height: 165px;
     background-color: white;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-phone {
+    width: 65px;
+    height: 65px;
 }
 
 /* End Phone Section */
 
-
-/* Abitab Collectivos Section */
-#abitab-colectivos-section {
+/* Abitab Collectives Section */
+#abitab-collectives-section {
     padding: 100px 0;
-    background-color: rgba(162,231,255,.3);
-
+    background-color: var(--background-sections);
+}
+.icon-abitab-collective-container {
+    background: #b9c2ca;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+}
+.icon-abitab-collective {
+    position: absolute;
+    top: -25%;
+    transform: translateX(60%);
 }
 
-/* End Abitab Collectivos Section */
+/* End Abitab Collectives Section */
 
-
-/* History Section */
-#history-section {
-    padding: 100px 0;
-}
-
-/* End History Section */
-
-
-/* Giro Transfer Section */
-#giro-transfer-section {
-    padding: 100px 0;
-    background-color: rgba(162,231,255,.3);
-
-}
-
-/* End Giro Transfer Section */
-
-
-/* Parking Section */
-#parking-section {
+/* AllInOne Section */
+#all-in-one-section {
     padding: 100px 0;
 }
 
-/* End Parking Section */
+.icon-card-container {
+    position: relative;
+    background-color: var(--background-sections);
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-block;
+    align-self: center;
+}
 
+.icon-card-all-in-one {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+/* AllInOne Section */
 
 /* Newsletters Section */
 #newsletters-section {
     padding: 100px 0;
-    background-color: rgba(162,231,255,.3);
-
+    background-color: var(--background-sections);
 }
 
 /* End Newsletters Section */
 
-
 /* Footer Section */
+footer {
+    padding: 50px 0;
+    background-color: var(--text);
+}
+
+.header-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    padding-left: 0;
+}
+.footer-links > li {
+    list-style: none !important;
+}
+.footer-links > li > a {
+    color: var(--text-light-70);
+    font-family: "Roboto" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 32px !important;
+}
+
+.footer-links > li > a:hover {
+    color: var(--text-light);
+}
 
 /* End Footer Section */
 
-
 /*  Small devices (landscape phones, 576px and up)  */
 @media (min-width: 576px) {
-
     /* Text Styles */
     .main-title {
         padding-left: 25%;
@@ -291,21 +377,19 @@ a {
 
 /*  Medium devices (tablets, 768px and up)  */
 @media (min-width: 768px) {
-
+    .card {
+        width: 32% !important;
+    }
 }
 
 /*  Large devices (desktops, 992px and up)  */
 @media (min-width: 992px) {
-
-
 }
 
 /*  X-Large devices (large desktops, 1200px and up)  */
 @media (min-width: 1200px) {
-
 }
 
 /*  XX-Large devices (larger desktops, 1400px and up)  */
 @media (min-width: 1400px) {
-
 }
